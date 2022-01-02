@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>AUTO BOT</title>
+ <style>
+ 	h1 {text-align: center;
+ 		font-size: 75px;}
+
+body {
+  background-image: url('img2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 19px;
+}
+table{
+	zoom:2;
+}
+button{
+	font-size: 50px;
+}
+</style>
+
+</head>
+
+<body style="background-color:powderblue;">
+ <div class="login">
+ <h1>!UPLOAD ONLY FOR CLASSIFICATION </h1>
+ <table>
+<form action="data" method="post">
+  <table style="width:50%" class="center">
+        <tr><th>
+  <input type = "file" class="btn btn-primary btn-block btn-large" name="csvfile" value=""><br><br></th></tr>
+  <tr><th><p align="left">  Target Feature</th><th>:</th><th> <input type="text" name="target" placeholder="target" required="required" /></p></th></tr>
+  <tr>
+      <th>   <p align="left"> Measure</th><th>:</th>
+       <th>   <select id = "measure" name = "measure">
+              <option value = "0"> Accuracy </option>
+              <option value = "1">AUC_ROC </option>
+              <option value = "2"> Precission </option>
+              <option value = "3"> Recall </option>
+              <option value = "4">F1_Score </option>
+           </select>
+         </p></th>
+      </tr>
+<tr><th>  <input type = "submit" class="btn btn-primary btn-block btn-large" name ="" value = "submit"></th></tr>
+
+</table>
+</form>
+ </div>
+</body>
+
+</html>
